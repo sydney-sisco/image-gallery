@@ -49,9 +49,9 @@ function appendToGallery(galleryContainer, items) {
     const galleryItem = document.createElement('div');
     galleryItem.classList.add('gallery-item');
     galleryItem.innerHTML = `
-          <img src="${endpoint}${item.url}" alt="${item.key}">
-          <div class="gallery-item-title">${item.title}</div>
-        `;
+        <img src="${endpoint}${encodeURIComponent(item.url)}" alt="${encodeURIComponent(item.key)}">
+        <div class="gallery-item-title">${item.title}</div>
+    `;
     galleryContainer.appendChild(galleryItem);
   });
 }
