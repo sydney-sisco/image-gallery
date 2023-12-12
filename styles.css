@@ -51,6 +51,6 @@ body {
   .gallery {
     grid-template-columns: 1fr;
     gap: 8px;
-    margin: 16px;
+    margin: 16px auto;
   }
 }
